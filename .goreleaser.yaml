@@ -34,6 +34,20 @@ archives:
 checksum:
   name_template: 'checksums.txt'
 
+brews:
+  - name: perfdeck
+    repository:
+      owner: sumant1122
+      name: homebrew-perfdeck
+      branch: main
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: Formula
+    homepage: "https://github.com/sumant1122/perfdeck"
+    description: "A modern, lightweight, and customizable TUI performance monitor."
+    license: "MIT"
+    install: |
+      bin.install "perfdeck"
+
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
 
