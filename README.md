@@ -51,6 +51,8 @@ Download the latest pre-compiled binaries from the [Releases page](https://githu
 ```bash
 go install github.com/sumant1122/perfdeck@latest
 ```
+> [!NOTE]
+> Ensure your `GOPATH/bin` is in your `PATH` (e.g., `export PATH=$PATH:$(go env GOPATH)/bin`) so you can run the `perfdeck` command from any directory.
 
 ### 🔨 From Source
 ```bash
