@@ -104,6 +104,25 @@ title = "Network Connections"
 cmd = ["ss", "-tulpn"]
 ```
 
+### 🍎 macOS Support
+
+Perfdeck works great on macOS! While many Linux-native tools (like `mpstat` or `free`) are not available by default, you can easily add macOS-equivalent commands to your `perfdeck.toml`.
+
+**Example macOS-friendly tabs:**
+```toml
+[[tab]]
+title = "Memory (vm_stat)"
+cmd = ["vm_stat"]
+
+[[tab]]
+title = "Disk I/O (iostat)"
+cmd = ["iostat", "-w", "1", "-c", "2"]
+
+[[tab]]
+title = "Battery Status"
+cmd = ["pmset", "-g", "batt"]
+```
+
 ## 🛠 Development
 
 We utilize a simple `Makefile` for a streamlined development experience:
