@@ -1,4 +1,4 @@
-module github.com/sumant1122/Perfmon
+module github.com/sumant1122/perfdeck
 
 go 1.22
 

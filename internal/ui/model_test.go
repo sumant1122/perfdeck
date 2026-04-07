@@ -3,7 +3,7 @@ package ui
 import (
 	"testing"
 
-	"github.com/sumant1122/Perfmon/internal/config"
+	"github.com/sumant1122/perfdeck/internal/config"
 
 	tea "github.com/charmbracelet/bubbletea"
 )

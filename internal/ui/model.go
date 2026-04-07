@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sumant1122/Perfmon/internal/config"
-	"github.com/sumant1122/Perfmon/internal/monitor"
-	"github.com/sumant1122/Perfmon/internal/theme"
+	"github.com/sumant1122/perfdeck/internal/config"
+	"github.com/sumant1122/perfdeck/internal/monitor"
+	"github.com/sumant1122/perfdeck/internal/theme"
 
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"

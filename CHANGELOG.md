@@ -2,10 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2026-04-07
+
+### Changed
+-   Renamed the project from `perfmon` to `perfdeck`.
+-   Updated module path to `github.com/sumant1122/perfdeck`.
+
 ## [0.2.0] - 2026-04-07
 
 ### Fixed
--   Module path changed to `github.com/sumant1122/Perfmon` to support `go install`.
+-   Module path changed to `github.com/sumant1122/perfdeck` to support `go install`.
 
 ### Changed
 -   Version bumped to 0.2.0.

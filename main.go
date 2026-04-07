@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sumant1122/Perfmon/internal/ui"
+	"github.com/sumant1122/perfdeck/internal/ui"
 
 	tea "github.com/charmbracelet/bubbletea"
 )
 
-const version = "0.2.0"
+const version = "0.3.0"
 
 func main() {
 	if printVersion() {
@@ -30,7 +30,7 @@ func printVersion() bool {
 	flag.BoolVar(&showVersion, "v", false, "print version and exit")
 	flag.Parse()
 	if showVersion {
-		fmt.Printf("perfmon %s\n", version)
+		fmt.Printf("perfdeck %s\n", version)
 		return true
 	}
 	return false

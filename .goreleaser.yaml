@@ -1,6 +1,6 @@
 version: 2
 
-project_name: perfmon
+project_name: perfdeck
 
 builds:
   - env:
