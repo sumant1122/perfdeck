@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 )
 
@@ -481,8 +482,12 @@ func memFromVmStat() (float64, bool) {
 
 var netPrevTotal uint64
 var netPrevAt time.Time
+var netMu sync.Mutex
 
 func getNetRateKB() (float64, bool) {
+	netMu.Lock()
+	defer netMu.Unlock()
+
 	total, ok := readNetBytes()
 	if !ok {
 		return 0, false
