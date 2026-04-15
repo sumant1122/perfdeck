@@ -25,12 +25,12 @@ archives:
       {{- if .Arm }}v{{ .Arm }}{{ end }}
     format_overrides:
       - goos: windows
-        formats: zip
+        formats: [zip]
 
 checksum:
   name_template: 'checksums.txt'
 
-homebrews:
+brews:
   - name: perfdeck
     repository:
       owner: sumant1122
